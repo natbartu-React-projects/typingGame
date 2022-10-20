@@ -10,3 +10,11 @@ button {
   height: 100%;
   cursor: pointer;
 }
+
+/* Media Queries */
+
+@media (max-width: 580px) {
+  button {
+    font-size: 16px;
+  }
+}

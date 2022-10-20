@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Words from "./components/words/Words";
 import Container from "./components/container/Container";
+import TypeRacer from "./components/typeRacer/TypeRacer";
 import "./App.css";
 
 const App = () => {
@@ -18,7 +19,9 @@ const App = () => {
 
   return (
     <div className="App">
-      <Container />
+      <Container>
+        <TypeRacer />
+      </Container>
     </div>
   );
 };
