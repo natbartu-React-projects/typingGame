@@ -10,14 +10,13 @@
 
 .typeRacer .wordOutput {
   width: 100%;
-  background: #111727;
-  color: #fff;
   padding: 20px;
   text-align: center;
 }
 
-.typeRacer .wordOutput p {
-  font-size: 26px;
+.newWord {
+  color: #fff;
+  font-size: 35px;
   line-height: 1;
 }
 

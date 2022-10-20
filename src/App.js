@@ -64,6 +64,7 @@ const App = () => {
 
   return (
     <div className="App">
+      <h1 className="title">Typing Game</h1>
       <Container>
         <TypeRacer
           newWord={newWord}

@@ -12,6 +12,11 @@
   display: flex;
 }
 
+.title {
+ color: #fff;
+ padding: 30px;
+}
+
 /* Keyframes Animation For Clock */
 
 @keyframes scaleNumber {
