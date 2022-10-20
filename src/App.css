@@ -7,27 +7,6 @@
   font-family: "Jost", sans-serif;
 }
 
-button {
-  border: none;
-  outline: none;
-  background: #f73859;
-  color: #fff;
-  font-size: 24px;
-  font-weight: 600;
-  width: 25%;
-  line-height: 1;
-  height: 100%;
-  cursor: pointer;
-}
-
-.container {
-  width: 100%;
-  max-width: 600px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-}
-
 /* App Styles */
 
 .App {

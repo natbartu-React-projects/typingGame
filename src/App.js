@@ -1,7 +1,13 @@
+import React from "react";
 import "./App.css";
+import Button from "./components/buttons/buttons";
 
-function App() {
-  return <h1>Starter</h1>;
-}
+const App = () => {
+  return (
+    <div className="App">
+      <Button />
+    </div>
+  );
+};
 
 export default App;
