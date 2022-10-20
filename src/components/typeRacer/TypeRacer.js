@@ -3,20 +3,29 @@ import Button from "../button/Button";
 import "./typeRacer.css";
 
 const TypeRacer = (props) => {
-  const { newWord, inputValue, setInputValue, disable, time, animation } =
+  const { newWord, inputValue, setInputValue, disabled, time, animation } =
     props;
 
   return (
     <div className="typeRacer">
       <div className="wordOutput"></div>
-      <p>New Word</p>
+      <p>{newWord}</p>
 
-      <div className="time">
-        <p>time</p>
+      <div
+        style={{ animation: animation !== null ? animation : "" }}
+        className="time"
+      >
+        <p>{time}</p>
       </div>
 
       <div className="wordValues">
-        <input type="text" />
+        <input
+          type="text"
+          disabled={disabled && disabled}
+          value={inputValue}
+          onChange={(e) => setInputValue(e.target.value)}
+          placeholder={disabled ? "" : "Start typing..."}
+        />
         <Button />
       </div>
     </div>

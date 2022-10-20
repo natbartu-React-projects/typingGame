@@ -7,7 +7,7 @@ import "./App.css";
 const App = () => {
   const [word, setWord] = useState(Words);
   const [newWord, setNweWord] = useState(word[0]);
-  const [disable, setDisable] = useState(true);
+  const [disabled, setDisabled] = useState(true);
   const [currentResults, setCurrentResults] = useState([]);
   const [incorrectResults, setIncorrectResults] = useState([]);
   const [count, setCount] = useState(0);
@@ -24,7 +24,7 @@ const App = () => {
           newWord={newWord}
           inputValue={inputValue}
           setInputValue={setInputValue}
-          disable={disable}
+          disable={disabled}
           time={time}
           animation={animation}
         />
