@@ -11,6 +11,7 @@ const TypeRacer = (props) => {
     time,
     animation,
     handleInput,
+    handleStart,
   } = props;
 
   return (
@@ -34,7 +35,7 @@ const TypeRacer = (props) => {
           placeholder={disabled ? "" : "Start Typing..."}
           onKeyPress={(e) => handleInput(e)}
         />
-        <Button />
+        <Button handleStart={handleStart} disabled={disabled} />
       </div>
     </div>
   );

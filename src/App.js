@@ -7,7 +7,7 @@ import "./App.css";
 
 const App = () => {
   const [word, setWord] = useState(Words);
-  const [newWord, setNweWord] = useState(word[0]);
+  const [newWord, setNewWord] = useState(word[0]);
   const [disabled, setDisabled] = useState(true);
   const [correctResults, setCorrectResults] = useState([]);
   const [incorrectResults, setIncorrectResults] = useState([]);
@@ -30,9 +30,17 @@ const App = () => {
   const handleInput = (e) => {
     if (e.charCode === 13 && inputValue.trim() !== "") {
       checkAnswer();
-      setNweWord(word[randomWord]);
+      setNewWord(word[randomWord]);
       setInputValue("");
     }
+  };
+
+  const handleStart = () => {
+    setDisabled(!disabled);
+    setCorrectResults([]);
+    setIncorrectResults([]);
+    setCount(0);
+    setInputValue("");
   };
 
   return (
@@ -46,6 +54,7 @@ const App = () => {
           time={time}
           animation={animation}
           handleInput={handleInput}
+          handleStart={handleStart}
         />
       </Container>
       <Results
