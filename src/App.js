@@ -27,6 +27,14 @@ const App = () => {
     setIncorrectResults((prevIncorrect) => [...prevIncorrect, inputValue]);
   };
 
+  const handleInput = (e) => {
+    if (e.charCode === 13 && inputValue.trim() !== "") {
+      checkAnswer();
+      setNweWord(word[randomWord]);
+      setInputValue("");
+    }
+  };
+
   return (
     <div className="App">
       <Container>
@@ -37,6 +45,7 @@ const App = () => {
           disable={disabled}
           time={time}
           animation={animation}
+          handleInput={handleInput}
         />
       </Container>
       <Results
