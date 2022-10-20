@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Words from "./components/words/Words";
 import Container from "./components/container/Container";
 import TypeRacer from "./components/typeRacer/TypeRacer";
+import Results from "./components/results/Results";
 import "./App.css";
 
 const App = () => {
@@ -27,6 +28,11 @@ const App = () => {
           disable={disabled}
           time={time}
           animation={animation}
+        />
+        <Results
+          correctResults={correctResults}
+          incorrectResults={incorrectResults}
+          count={count}
         />
       </Container>
     </div>

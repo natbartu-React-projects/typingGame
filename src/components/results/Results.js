@@ -1,17 +1,19 @@
 import React from "react";
 
-const Results = () => {
+const Results = (props) => {
+  const { correctResults, incorrectResults, count } = props;
+
   return (
     <div className="results">
       <div className="title">
-        <p>Correct Answers: 7</p>
+        <p>Correct Answers: {count}</p>
       </div>
       <div className="resultsContainer">
         <div className="correctResults">
-          <p>Correct</p>
+          <p>{correctResults}</p>
         </div>
         <div className="incorrectResults">
-          <p>Incorrect Results</p>
+          <p>{incorrectResults}</p>
         </div>
       </div>
     </div>
