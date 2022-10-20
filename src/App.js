@@ -8,7 +8,7 @@ const App = () => {
   const [word, setWord] = useState(Words);
   const [newWord, setNweWord] = useState(word[0]);
   const [disabled, setDisabled] = useState(true);
-  const [currentResults, setCurrentResults] = useState([]);
+  const [correctResults, setCorrectResults] = useState([]);
   const [incorrectResults, setIncorrectResults] = useState([]);
   const [count, setCount] = useState(0);
   const [time, setTime] = useState(30);

@@ -24,7 +24,7 @@ const TypeRacer = (props) => {
           disabled={disabled && disabled}
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
-          placeholder={disabled ? "" : "Start typing..."}
+          placeholder={disabled ? "" : "Start Typing..."}
         />
         <Button />
       </div>
