@@ -1,13 +1,12 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import Words from "./components/words/words";
 import "./App.css";
-import Button from "./components/buttons/buttons";
 
 const App = () => {
-  return (
-    <div className="App">
-      <Button />
-    </div>
-  );
+  const [word, setWord] = useState(Words);
+  const [newWord, setNweWord] = useState(word[0]);
+
+  return <div className="App"></div>;
 };
 
 export default App;
