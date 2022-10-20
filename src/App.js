@@ -29,12 +29,12 @@ const App = () => {
           time={time}
           animation={animation}
         />
-        <Results
-          correctResults={correctResults}
-          incorrectResults={incorrectResults}
-          count={count}
-        />
       </Container>
+      <Results
+        correctResults={correctResults}
+        incorrectResults={incorrectResults}
+        count={count}
+      />
     </div>
   );
 };
