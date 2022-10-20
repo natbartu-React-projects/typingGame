@@ -18,6 +18,15 @@ const App = () => {
 
   let randomWord = Math.floor(Math.random() * word.length);
 
+  const checkAnswer = () => {
+    if (inputValue.trim() === newWord) {
+      setCorrectResults((prevCorrect) => [...prevCorrect, newWord]);
+      setCount((prevCorrect) => prevCorrect + 1);
+      return;
+    }
+    setIncorrectResults((prevIncorrect) => [...prevIncorrect, inputValue]);
+  };
+
   return (
     <div className="App">
       <Container>
