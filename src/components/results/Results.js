@@ -12,14 +12,17 @@ const Results = (props) => {
 
       <div className="resultsContainer">
         <div className="correctResults">
+          {" "}
+          Correct
           {correctResults.map((correctWord, idx) => (
             <div key={idx} className="row">
               <p>{correctWord}</p>
             </div>
           ))}
-          <p>{correctResults}</p>
         </div>
         <div className="incorrectResults">
+          {" "}
+          Incorrect
           {incorrectResults.map((incorrectWord, idx) => (
             <div key={idx} className="row">
               <p>{incorrectWord}</p>

@@ -37,14 +37,15 @@
 }
 
 .results .resultsContainer .correctResults,
-.results .resultsContainer .wrongResults {
+.results .resultsContainer .incorrectResults {
   width: 100%;
   max-width: 50%;
   padding: 14px;
+  color: #fff;
+  text-align: center;
 }
 
-.results .resultsContainer .correctResults .row,
-.results .resultsContainer .wrongResults .row {
+.results .resultsContainer .correctResults .row {
   width: 100%;
   padding: 14px;
   background: #f73859;
@@ -53,8 +54,18 @@
   word-wrap: break-word;
 }
 
+.results .resultsContainer .incorrectResults .row {
+  width: 100%;
+  padding: 14px;
+  /* margin: 10px; */
+  background: #fff;
+  color: #f73859;
+  border-radius: 4px;
+  word-wrap: break-word;
+}
+
 .results .resultsContainer .correctResults .row:not(:last-of-type),
-.results .resultsContainer .wrongResults .row:not(:last-of-type) {
+.results .resultsContainer .incorrectResults .row:not(:last-of-type) {
   margin-bottom: 10px;
 }
 
