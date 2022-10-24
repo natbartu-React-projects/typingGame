@@ -9,6 +9,7 @@ const Results = (props) => {
       <div className="title">
         <p>Correct Answers: {count}</p>
       </div>
+
       <div className="resultsContainer">
         <div className="correctResults">
           {correctResults.map((correctWord, idx) => (

@@ -63,25 +63,28 @@ const App = () => {
   }, []);
 
   return (
-    <div className="App">
+    <div>
       <h1 className="title">Typing Game</h1>
-      <Container>
-        <TypeRacer
-          newWord={newWord}
-          inputValue={inputValue}
-          setInputValue={setInputValue}
-          disable={disabled}
-          time={time}
-          animation={animation}
-          handleinput={handleinput}
-          handleStart={handleStart}
+      <div className="App">
+        {/* <h1 className="title">Typing Game</h1> */}
+        <Container>
+          <TypeRacer
+            newWord={newWord}
+            inputValue={inputValue}
+            setInputValue={setInputValue}
+            disable={disabled}
+            time={time}
+            animation={animation}
+            handleinput={handleinput}
+            handleStart={handleStart}
+          />
+        </Container>
+        <Results
+          correctResults={correctResults}
+          incorrectResults={incorrectResults}
+          count={count}
         />
-      </Container>
-      <Results
-        correctResults={correctResults}
-        incorrectResults={incorrectResults}
-        count={count}
-      />
+      </div>
     </div>
   );
 };

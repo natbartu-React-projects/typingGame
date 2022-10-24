@@ -16,8 +16,9 @@ const TypeRacer = (props) => {
 
   return (
     <div className="typeRacer">
-      <div className="wordOutput"></div>
-      <p className="newWord">{newWord}</p>
+      <div className="wordOutput">
+        <p className="newWord">{newWord}</p>
+      </div>
 
       <div className="time">
         <p style={{ animation: animation !== null ? animation : "" }}>{time}</p>
